@@ -1,0 +1,242 @@
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header {
+    background-color: lightslategrey;
+    display: flex;
+    border-radius: 30px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.header-info {
+    width: 50%;
+    padding-left: 100px;
+}
+
+.watch-live {
+    width: 190px;
+    height: 60px;
+    background-color: crimson;
+    border-radius: 5px;
+    border: none;
+    
+
+}
+.animation{
+    transition: all 0.5s ease-out;
+}
+.animation :hover{
+    background-color: green;
+}
+/* --------------------------------Main Contain Style -------------------------------------- */
+
+.main-content {
+    margin: 50px;
+    display: flex;
+}
+
+.side-var {
+    align-items: center;
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: darkgray;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.side-button {
+    margin: 15px;
+    width: 250px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.side-button :hover {
+    border: none;
+    background: #ff7a59;
+    color: #ffffff;
+    font-size: 30px;
+    transition: all 500ms ease;
+}
+
+.side-button a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.match-highlight {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    margin-left: 20px;
+}
+
+.highlight {
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-around;
+}
+
+.view {
+    text-align: center;
+    display: none;
+}
+
+.view-button {
+    background-color: #ff7a59;
+    width: 130px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Style for Upcoming Matches page  */
+.match {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.flag-1 {
+    padding-right: 30px;
+
+}
+
+.match-info {
+    text-align: center;
+    color: #4D4D4D;
+}
+/*--------------------------- End Upcoming match page Style ------------------------- */
+
+footer {
+    width: 100%;
+    height: 450px;
+    background-color: darkgray;
+}
+
+footer h2 {
+    font-size: 50px;
+    text-align: center;
+    padding: 50px;
+
+}
+
+hr {
+    border: 1px solid white;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-info {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.s-media {
+    display: none;
+    text-align: center;
+}
+
+/* -----------------------------------Responsive for Tablet ------------------------------- */
+
+@media only screen and (max-width: 768px) {
+    .header {
+        width: 100%;
+    }
+
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side-var {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    .match-highlight {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .view {
+        display: block;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+/* ------------------------Responsive for Mobile --------------------------------------------- */
+@media only screen and (max-width: 576px) {
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .header-info{
+        text-align: center;
+    }
+
+    .header-info p {
+        white-space: nowrap;
+        width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    
+    }
+
+
+    .side-var {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .match-highlight {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .contact {
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .s-media {
+        display: block;
+    }
+    .view{
+        display: none;
+    }
+
+}
